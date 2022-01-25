@@ -2,7 +2,9 @@
   "name": "webview-statusbar-bug",
   "version": "1.0.0",
   "scripts": {
-    "ios": "expo run:ios"
+    "ios": "expo run:ios",
+    "start": "expo start --dev-client",
+    "android": "expo run:android"
   },
   "dependencies": {
     "expo": "~44.0.0",

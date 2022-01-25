@@ -1,11 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Button, View, Text } from 'react-native';
+import * as WebBrowser from 'expo-web-browser';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text>Make sure the device is in dark mode</Text>
+      <Button title="Open WebBrowser" onPress={() => WebBrowser.openBrowserAsync('https://expo.dev')} />
+      <StatusBar style="dark" />
     </View>
   );
 }
